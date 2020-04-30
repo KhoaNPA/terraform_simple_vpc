@@ -35,7 +35,7 @@ resource "aws_subnet" "private_db_1" {
   cidr_block        = "${var.vpc_private_subnet_1}"
   availability_zone = "${var.region}a"
   tags = {
-    Name        = "${var.env}.${var.vpc_name}.db.b1.private"
+    Name        = "${var.env}.${var.vpc_name}.db.a1.private"
     Provisioner = "${var.provisioner}"
   }
 }
